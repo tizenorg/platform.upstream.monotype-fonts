@@ -1,3 +1,6 @@
+* Thu Feb 21 2013 Patrick McCarty <patrick.mccarty@linux.intel.com> ad570d0
+- Fix typo in _ttffontsdir macro
+
 * Fri Feb 01 2013 Patrick McCarty <patrick.mccarty@linux.intel.com> 167e0f7
 - Add packaging
 - Initial import of Monotype fonts package
