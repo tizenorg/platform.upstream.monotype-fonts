@@ -1,5 +1,5 @@
 %define _fontsdir               %{_datadir}/fonts
-%define _ttfontsdir             %{_fontsdir}/truetype
+%define _ttffontsdir            %{_fontsdir}/truetype
 %define _miscfontsdir           %{_fontsdir}/misc
 %define _fontsconfdir           %{_sysconfdir}/fonts
 %define _fontsconfddir          %{_fontsconfdir}/conf.d
@@ -25,8 +25,8 @@ Fonts package that provides the Clear Sans font
 %build
 
 %install
-mkdir -p %{buildroot}%{_ttfontsdir}
-install -m 0644 ttf/*.ttf %{buildroot}%{_ttfontsdir}/
+mkdir -p %{buildroot}%{_ttffontsdir}
+install -m 0644 ttf/*.ttf %{buildroot}%{_ttffontsdir}/
 
 %post
 if [ -x %{_bindir}/fc-cache ]; then
@@ -39,4 +39,4 @@ if [ -x %{_bindir}/fc-cache ]; then
 fi
 
 %files
-%{_ttfontsdir}/*.ttf
+%{_ttffontsdir}/*.ttf
