@@ -39,4 +39,5 @@ if [ -x %{_bindir}/fc-cache ]; then
 fi
 
 %files
+%license COPYING
 %{_ttffontsdir}/*.ttf

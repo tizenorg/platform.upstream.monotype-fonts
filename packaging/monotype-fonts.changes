@@ -1,3 +1,6 @@
+* Sat May 11 2013 Anas Nashif <anas.nashif@intel.com> submit/tizen/20130509.182420@285f0fb
+- Set license using %license
+
 * Thu Feb 21 2013 Patrick McCarty <patrick.mccarty@linux.intel.com> ad570d0
 - Fix typo in _ttffontsdir macro
 
