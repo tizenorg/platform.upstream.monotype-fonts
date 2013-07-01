@@ -13,6 +13,7 @@ Summary:        Fonts package that provides the Clear Sans font
 Url:            http://www.intel.com/
 Group:          System/Fonts
 Source:         %{name}-%{version}.tar.xz
+Source1001: 	monotype-fonts.manifest
 BuildArch:      noarch
 Requires(post): %{_bindir}/fc-cache
 
@@ -21,6 +22,7 @@ Fonts package that provides the Clear Sans font
 
 %prep
 %setup -q
+cp %{SOURCE1001} .
 
 %build
 
@@ -39,5 +41,6 @@ if [ -x %{_bindir}/fc-cache ]; then
 fi
 
 %files
+%manifest %{name}.manifest
 %license COPYING
 %{_ttffontsdir}/*.ttf
