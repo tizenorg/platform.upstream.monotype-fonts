@@ -1,0 +1,8 @@
+Change-Id: Iecd308157ee35ce5cdbc80b34633655827cf979d
+Code-Review+2: Ryan Ware <ware@linux.intel.com>
+Verified+1: Ryan Ware <ware@linux.intel.com>
+Submitted-by: Ryan Ware <ware@linux.intel.com>
+Submitted-at: Mon, 08 Jul 2013 10:07:53 -0700
+Reviewed-on: https://review.tizen.org/gerrit/5219
+Project: platform/upstream/monotype-fonts
+Branch: refs/heads/tizen
