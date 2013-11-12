@@ -6,12 +6,13 @@
 %define _fontsconfavaildir      %{_datadir}/%{name}/conf.avail
 
 Name:           monotype-fonts
-Version:        0.0.1
+Version:        1.00
 Release:        0
-License:        Intel Proprietary
+License:        Apache-2.0
 Summary:        Fonts package that provides the Clear Sans font
-Url:            http://www.intel.com/
-Group:          System/Fonts
+Url:            https://01.org/clear-sans
+Group:          Graphics & UI Framework/Fonts
+# Upstream only provides a zip file, so source is imported manually
 Source:         %{name}-%{version}.tar.xz
 Source1001: 	monotype-fonts.manifest
 BuildArch:      noarch
@@ -28,7 +29,7 @@ cp %{SOURCE1001} .
 
 %install
 mkdir -p %{buildroot}%{_ttffontsdir}
-install -m 0644 ttf/*.ttf %{buildroot}%{_ttffontsdir}/
+install -m 0644 TTF/*.ttf %{buildroot}%{_ttffontsdir}/
 
 %post
 if [ -x %{_bindir}/fc-cache ]; then
@@ -42,5 +43,5 @@ fi
 
 %files
 %manifest %{name}.manifest
-%license COPYING
+%license LICENSE-2.0.txt
 %{_ttffontsdir}/*.ttf
