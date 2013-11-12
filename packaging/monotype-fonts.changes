@@ -1,3 +1,6 @@
+* Tue Nov 12 2013 Patrick McCarty <patrick.mccarty@linux.intel.com> eab3631
+- Upgrade to 1.00, initial open source release
+
 * Sat May 11 2013 Anas Nashif <anas.nashif@intel.com> submit/tizen/20130509.182420@285f0fb
 - Set license using %license
 
